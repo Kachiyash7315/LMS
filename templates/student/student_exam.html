@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<head>
+
+  <style media="screen">
+    a:link {
+      text-decoration: none;
+    }
+
+    h6 {
+      text-align: center;
+    }
+
+    .row {
+      margin: 100px;
+    }
+  </style>
+</head>
+<br><br>
+<div class="container">
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h6 class="panel-title">Available Courses</h6>
+    </div>
+    <table class="table table-hover table-bordered" id="dev-table">
+      <thead>
+        <tr>
+
+          <th>Exam Name</th>
+          
+          <th>Action</th>
+        </tr>
+      </thead>
+
+      {% for t in courses %}
+      <tr>
+
+        <td> {{t.title}}</td>
+
+        <div><td><a class="btn btn-success btn-sm" style="border-radius:0px;" href="{% url 'take-exam' t.id  %}"><span class="glyphicon glyphicon-check"></span> Attend Exam</a></td></div>
+<!--        take-exam-->
+
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+</div>
+
+<br><br><br><br><br><br>
+{% endblock content %}

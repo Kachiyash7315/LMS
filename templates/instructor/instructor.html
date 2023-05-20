@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<header class="py-3 py-md-3" style="background-image: none;">
+        <div class="container text-center py-xl-2">
+            <h1 class="display-4 fw-semi-bold mb-0">Become An Instructor</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb breadcrumb-scroll justify-content-center">
+                    <li class="breadcrumb-item">
+                        <a class="text-gray-800" href="{% url 'home' %}">
+                            Home
+                        </a>
+                    </li>
+                     <li class="breadcrumb-item">
+                        <a class="text-gray-800" href="{% url 'become-instructor' %}">
+                            Become an Instructor
+                        </a>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+        <!-- Img -->
+        <img class="d-none img-fluid" src="...html" alt="...">
+    </header>
+
+
+    <!-- BECOME AN INSTRUCTOR
+    ================================================== -->
+    <div class="container mb-11">
+        <div class="text-center mb-5">
+            <h1 class="mb-1">Apply As Instructor</h1>
+            <p class="">Discover your perfect program in our courses.</p>
+        </div>
+        <p class="w-xl-80 mx-xl-auto text-center line-height-md mb-6">Convallis vitae, nunc ut venenatis, lectus. Tellus nunc orci dolor nec facilisis et lacus, eu aliquet. Amet imperdiet ac venenatis, lacus. Tortor interdum quisque et, eu etiam ac. Hac lectus at posuere est consequat euismod tellus ut. Dolor ut diam sed dignissim eget gravida. Lectus mattis hac vitae, sed quis vel ornare sed. Ut vel cursus sed id eu. Laoreet bibendum eget dui sapien bibendum sapien. </p>
+
+        <img class="rounded img-fluid mb-6" src="{% static 'assets/img/covers/cover-23.jpg' %}" alt="...">
+
+        <!-- COURSE INFO TAB
+        ================================================== -->
+        <ul id="pills-tab" class="nav course-tab-v1 border-bottom h4 mb-8 pt-1 justify-content-center" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="pills-overview-tab" data-bs-toggle="pill" href="#pills-overview" role="tab" aria-controls="pills-overview" aria-selected="true">Become an Intructor</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-curriculum-tab" data-bs-toggle="pill" href="#pills-curriculum" role="tab" aria-controls="pills-curriculum" aria-selected="false">Intructor Rules</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-instructor-tab" data-bs-toggle="pill" href="#pills-instructor" role="tab" aria-controls="pills-instructor" aria-selected="false">Start with courses</a>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-overview" role="tabpanel" aria-labelledby="pills-overview-tab">
+                <div class="w-xl-80 mx-auto mb-8">
+                    <h3 class="">Become</h3>
+                    <p class="mb-6 line-height-md">Do you want to become a UI/UX designer but you don't know where to start? This course will allow you to develop your user interface design skills and you can add UI designer to your CV and start getting clients for your skills.</p>
+                    <p class="mb-6 line-height-md">Hi everyone. I'm Arash and I'm a UI/UX designer. In this course, I will help you learn and master Figma app comprehensively from scratch. Figma is an innovative and brilliant tool for User Interface design. It's used by everyone from entrepreneurs and start-ups to Apple, Airbnb, Facebook, etc.</p>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="pills-curriculum" role="tabpanel" aria-labelledby="pills-curriculum-tab">
+                <div class="w-xl-80 mx-auto mb-8">
+                    <h3 class="">Rules</h3>
+                    <p class="mb-6 line-height-md">Do you want to become a UI/UX designer but you don't know where to start? This course will allow you to develop your user interface design skills and you can add UI designer to your CV and start getting clients for your skills.</p>
+                    <p class="mb-6 line-height-md">Hi everyone. I'm Arash and I'm a UI/UX designer. In this course, I will help you learn and master Figma app comprehensively from scratch. Figma is an innovative and brilliant tool for User Interface design. It's used by everyone from entrepreneurs and start-ups to Apple, Airbnb, Facebook, etc.</p>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="pills-instructor" role="tabpanel" aria-labelledby="pills-instructor-tab">
+                <div class="w-xl-80 mx-auto mb-8">
+                    <h3 class="">Start with courses</h3>
+                    <p class="mb-6 line-height-md">Do you want to become a UI/UX designer but you don't know where to start? This course will allow you to develop your user interface design skills and you can add UI designer to your CV and start getting clients for your skills.</p>
+                    <p class="mb-6 line-height-md">Hi everyone. I'm Arash and I'm a UI/UX designer. In this course, I will help you learn and master Figma app comprehensively from scratch. Figma is an innovative and brilliant tool for User Interface design. It's used by everyone from entrepreneurs and start-ups to Apple, Airbnb, Facebook, etc.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- COUNTUP
+    ================================================== -->
+
+{% endblock %}
