@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'app',
     'crispy_forms',
-    'widget_tweaks',
+   
     # 'exam',
 ]
 CSRF_COOKIE_SECURE=False
