@@ -130,7 +130,7 @@ def PAGE_NOT_FOUND(request):
     }
     return render(request, 'error/404.html', context)
 
-
+@login_required()
 def CHECKOUT(request, slug):
     order = None
     action = request.GET.get('action')
@@ -204,6 +204,7 @@ def MY_COURSE(request):
 
 
 @csrf_exempt
+@login_required()
 def VERIFY_PAYMENT(request):
     if request.method == 'POST':
         data = request.POST
