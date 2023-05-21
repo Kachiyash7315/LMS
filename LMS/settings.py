@@ -124,7 +124,9 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
-
+CSRF_TRUSTED_ORIGINS = [
+    'https://web-production-66bc1.up.railway.app/',
+]
 
 STATIC_URL = '/static/'
 #STATIC_ROOT = '/static/'
